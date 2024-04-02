@@ -1,9 +1,12 @@
 import React from 'react'
 import { Card, CardContent, CardActions, Divider } from '@mui/material'
 import { Link } from 'react-router-dom'
-import cars from '../cars.json' // remove this
+// import cars from '../cars.json' // remove this
 
 const Home = (props) => {
+
+    const { cars } = props;
+
     return (
         <div className="card-container">
             {/* Change cars to props.cars and remove the cars.json import above */}
